@@ -1,0 +1,45 @@
+/**
+
+import "fmt"
+
+type user struct {
+	name  string
+	age   uint8
+	email string
+}
+
+func (s user) String() string {
+	return fmt.Sprintln("Name: ", s.name, " Age: ", s.age, " Email: ", s.email)
+}
+
+func main() {
+	a := user{"Mike", 11, "mike@gmail.com"}
+	b := user{"John", 15, "john@gmail.com"}
+	c := user{"Bill", 25, "bill@gmail.com"}
+
+	fmt.Print(a, b, c)
+    fmt.Println(users)
+	[{Mike 32 mike@gmail.com} {John 54 john@gmail.com} {Abobus 2 abobus@gmail.com}]
+	
+	fmt.Println(users[0:1])
+	fmt.Println(users[1:2])
+	fmt.Println(users[2:3])
+	fmt.Println(users[0:])
+	
+	for  _, i := range users {
+	fmt.Println("\n", i)
+	
+	for v, i := range users {
+		fmt.Println("\n", v, i)
+		fmt.Println(users)
+	}
+	
+	for index, value := range users {
+		fmt.Println("\n", index, value)
+		fmt.Println(users)
+	}
+
+
+}
+}
+**/
