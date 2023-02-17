@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 type user struct {
@@ -37,7 +38,7 @@ func main() {
 	//fmt.Println(users[0].name)
 
 	for index := 0; index < len(users); index++ {
-		if users[index].name == clientInfo {
+		if strings.EqualFold(users[index].name, clientInfo) {
 			fmt.Println("****************Информация об клиенте****************")
 			fmt.Println("Имя клиента: " + users[index].name)
 			fmt.Println("Email клиента: " + users[index].email)
